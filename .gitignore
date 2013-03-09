@@ -1,0 +1,5 @@
+*.sublime*
+*.swp
+scratch.txt
+notes.md
+node_modules

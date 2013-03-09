@@ -1,0 +1,17 @@
+<h2>ember-data Technique</h2>
+
+<h5>Pages Fetched: {{page}} </h5>
+<h5>Per Page: {{perPage}}</h5>
+<h5>Total: {{total}}</h5>
+
+<button {{action "nextPage"}}>Next Page</button>
+<hr />
+
+{{#each photo in controller}}
+  <div>
+    <image {{bindAttr src="photo.url_sq"}} />
+  </div>
+{{else}}
+  <div>get the next page</div>
+{{/each}}
+
